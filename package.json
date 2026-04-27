@@ -1,7 +1,7 @@
 {
   "name": "@howells/cli",
-  "version": "0.1.0",
-  "description": "Agent-first CLI harness — structured JSON output, arg parsing, input hardening, schema introspection. The shared foundation for @howells/thingscli, @howells/starlingcli, @howells/linearcli.",
+  "version": "0.2.0",
+  "description": "Agent-first CLI harness — structured JSON output, structured errors with retriability + sysexits codes, HTTP error classification, MCP tool envelope helpers, pagination, schema introspection, arg parsing, input hardening. Shared foundation for @howells/thingscli, @howells/starlingcli, @howells/linearcli, @howells/wisecli, @howells/revolutcli.",
   "type": "module",
   "license": "MIT",
   "author": "Daniel Howells <daniel.howells@gmail.com>",
@@ -16,11 +16,18 @@
     "ai",
     "json",
     "harness",
-    "validation"
+    "validation",
+    "mcp",
+    "errors"
   ],
   "exports": {
     ".": "./dist/index.js",
     "./args": "./dist/args.js",
+    "./errors": "./dist/errors.js",
+    "./http": "./dist/http.js",
+    "./mcp": "./dist/mcp.js",
+    "./output": "./dist/output.js",
+    "./pagination": "./dist/pagination.js",
     "./validate": "./dist/validate.js"
   },
   "files": [
@@ -43,7 +50,7 @@
   "devDependencies": {
     "@howells/husky": "^0.1.0",
     "@howells/lint": "^0.1.3",
-    "@howells/typescript-config": "^0.1.0",
+    "@howells/typescript-config": "^0.1.2",
     "@types/node": "^22.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
