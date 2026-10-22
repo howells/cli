@@ -55,7 +55,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "typescript": "^5.7.0",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": ">=20"
